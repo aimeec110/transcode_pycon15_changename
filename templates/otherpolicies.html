@@ -1,0 +1,51 @@
+{% extends "basiclayout.html" %}
+{% block body %}
+<Title>Other Policies</title>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ url_for('hello')}}">Trans*Code Deedpoll</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+	    <li><a href="{{ url_for('hello')}}">Home</a></li>
+        <li><a href="{{ url_for('credits')}}">Credits</a></li>
+	  </ul>
+	 </div>
+  </div>
+ </nav>
+ <div class="container">
+  <div class="jumbotron">
+<h3>Now you have changed your name, you may find these inclusion policies useful</h3>
+<br>
+<p>
+<ul>
+<li> Aimee Challenor | <a href="https://twitter.com/aimeec110">@aimeec110</a> | <a href="http://aimeec.co.uk">aimeec.co.uk</a></li>
+<li> Andrea Fagan</li>
+<li> Rachel Evans</li>
+<li> Samathy Barratt</li>
+<li> George Lestaris</li>
+<li> Daira Hopwood</li>
+<li> Jon Kelly</li>
+</ul>
+</p>
+<br><br>
+<p><p>
+<br><br><br>
+  </div>
+ </div>
+<blockquote>
+    <p>Our job as the game creators or developers<br>the programmers, artists, and whatnot, is that we have to kind of put ourselves in the user's shoes. We try to see what they're seeing, and then make it, and support what we think they might think.</p>
+    <footer>Shigeru Miyamoto</u> - Creator of the Legend of Zelda games</footer>
+  </blockquote>
+<br>
+{% endblock %}
