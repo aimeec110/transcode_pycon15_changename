@@ -14,6 +14,11 @@ def hello():
 def credits():
     return render_template("credits.html")
 
+@app.after_request
+def gnu_terry_pratchett(resp):
+ resp.headers.add("X-Clacks-Overhead", "GNU Terry Pratchett")
+ return resp
+
 if __name__ == "__main__":
  app.debug = True
  app.run(debug=True)
