@@ -11,13 +11,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ url_for('hello')}}">Transcode Deedpoll</a>
+      <a class="navbar-brand" class="active" href="{{ url_for('hello')}}">Transcode Deedpoll<span class="sr-only">(current)</span></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-	    <li class="active"><a href="{{ url_for('hello')}}">Home <span class="sr-only">(current)</span></a></li>
         <li><a href="{{ url_for('credits')}}">Credits</a></li>
 	  </ul>
 	 </div>
@@ -27,17 +26,18 @@
   <div class="jumbotron">
 	<h1>Trans*Code Deedpoll</h1>
   <br>
-	<h3>This free webtool aims to make it easer and less stressful to change your name. We walk you through from the Deedpoll to letters asking places to update the information they hold on file for you.</h3>
+	<h3>This free web tool aims to make it easer and less stressful to change your name. We walk you through from the Deedpoll to letters asking places to update the information they hold on file for you.</h3>
 	<br>
+  <p align="center"><a href="{{ url_for('change')}}" align="center" class="btn btn-primary btn-lg" role="button">Change name and Title</a></p>
 <br>
 <div class="row">
 	<div class="col-sm-4">
 	<h3><u>Useful Links</u></h3>
   <ul>
   <li><a href="http://uktrans.info/">UK Trans Info</a></li>
-  <li><a href="http://actionfortranshealth.org.uk/">Action for Trans Health</a></li>
+  <li><a href="http://actionfortranshealth.org.uk/">Action for Trans* Health</a></li>
   <li><a href="http://trans-code.org/">Trans*Code</a></li>
-  <li><a href="{{ url_for('otherpolicies')}}">Iclusion Policies for other organisations</a></li>
+  <li><a href="{{ url_for('otherpolicies')}}">Inclusion Policies for other organisations</a></li>
   </ul>
 	</div>
 <div class="col-sm-4">

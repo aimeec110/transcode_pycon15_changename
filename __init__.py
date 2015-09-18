@@ -18,6 +18,10 @@ def credits():
 def otherpolicies():
     return render_template("otherpolicies.html")
 
+@app.route("/change")
+def change():
+    return render_template("change.html")
+
 @app.after_request
 def gnu_terry_pratchett(resp):
  resp.headers.add("X-Clacks-Overhead", "GNU Terry Pratchett")
