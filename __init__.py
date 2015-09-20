@@ -1,32 +1,37 @@
 from flask import(
         Flask,
         render_template,
-		request
+#            request
 )
 app = Flask(__name__)
+
 
 @app.route("/")
 @app.route("/transcode")
 def hello():
     return render_template("index.html")
- 
+
+
 @app.route("/Credits")
 def credits():
     return render_template("credits.html")
+
 
 @app.route("/otherpolicies")
 def otherpolicies():
     return render_template("otherpolicies.html")
 
+
 @app.route("/change")
 def change():
     return render_template("change.html")
 
+
 @app.after_request
 def gnu_terry_pratchett(resp):
- resp.headers.add("X-Clacks-Overhead", "GNU Terry Pratchett")
- return resp
+    resp.headers.add("X-Clacks-Overhead", "GNU Terry Pratchett")
+    return resp
 
 if __name__ == "__main__":
- app.debug = True
- app.run(debug=True)
+    app.debug = True
+    app.run(debug=True)
